@@ -63,7 +63,8 @@ class HasManyCustomRelation extends Relation
         );
 
         $this->query->{$where_in}(
-            $this->foreign_key, $values
+            $this->foreign_key,
+            $values
         );
     }
 
