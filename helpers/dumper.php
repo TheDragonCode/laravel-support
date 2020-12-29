@@ -6,7 +6,7 @@ if (! function_exists('dd_sql')) {
     /**
      * Dump the passed variables and end the script.
      *
-     * @param  \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder  $query
+     * @param  \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Query\Builder  $query
      * @param  bool  $is_short
      * @param  bool  $is_return
      *
