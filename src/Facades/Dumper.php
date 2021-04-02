@@ -6,7 +6,9 @@ use Helldar\LaravelSupport\Support\Dumper as Support;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static void|string|array ddSql($query, bool $is_short = false, bool $is_return = false)
+ * @method static void sqlDd($query, bool $is_short = false)
+ * @method static void sqlDump($query, bool $is_short = false)
+ * @method static array|string sql($query, bool $is_short = false)
  */
 class Dumper extends Facade
 {

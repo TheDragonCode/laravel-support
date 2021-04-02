@@ -4,21 +4,53 @@ namespace Helldar\LaravelSupport\Support;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Query\Builder as QueryBuilder;
+use Symfony\Component\VarDumper\VarDumper;
 
 class Dumper
 {
     /**
-     * Dump the passed variables and end the script.
+     * Throws a message with an SQL query.
      *
      * @see https://gist.github.com/Ellrion/561fc48894a87b853917e0a5cec83181#file-helper-php
      *
      * @param $query
      * @param  bool  $is_short
-     * @param  bool  $is_return
+     *
+     * @return void
+     */
+    public function sqlDd($query, bool $is_short = false): void
+    {
+        $this->sqlDump($query, $is_short);
+
+        exit(1);
+    }
+
+    /**
+     * Displays a message with an SQL query.
+     *
+     * @see https://gist.github.com/Ellrion/561fc48894a87b853917e0a5cec83181#file-helper-php
+     *
+     * @param $query
+     * @param  bool  $is_short
+     *
+     * @return array|string|void
+     */
+    public function sqlDump($query, bool $is_short = false): void
+    {
+        $data = $this->sql($query, $is_short);
+
+        VarDumper::dump($data);
+    }
+
+    /**
+     * Returns SQL query.
+     *
+     * @param $query
+     * @param  bool  $is_short
      *
      * @return array|string
      */
-    public function ddSql($query, bool $is_short = false, bool $is_return = false)
+    public function sql($query, bool $is_short = false)
     {
         $query = $this->prepareQuery($query);
 
@@ -28,13 +60,7 @@ class Dumper
 
         $raw = $this->getRaw($sql, $bindings);
 
-        $data = $this->getData($is_short, $sql, $query->getRawBindings(), $raw);
-
-        if ($is_return) {
-            return $data;
-        }
-
-        dd($data);
+        return $this->getData($is_short, $sql, $query->getRawBindings(), $raw);
     }
 
     protected function prepareQuery($query): QueryBuilder
