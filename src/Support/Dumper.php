@@ -15,8 +15,6 @@ class Dumper
      *
      * @param $query
      * @param  bool  $is_short
-     *
-     * @return void
      */
     public function sqlDd($query, bool $is_short = false): void
     {
