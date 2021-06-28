@@ -2,6 +2,7 @@
 
 namespace Helldar\LaravelSupport\Eloquent;
 
+use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Database\Eloquent\Model;
 
 abstract class CompositeKeysModel extends Model
@@ -24,6 +25,23 @@ abstract class CompositeKeysModel extends Model
             : null;
     }
 
+    public function find($id, $columns = ['*'])
+    {
+        if (is_array($id)) {
+            $keys = array_filter($id, function ($key) {
+                return $this->hasPrimary($key);
+            }, ARRAY_FILTER_USE_KEY);
+
+            if (! empty($keys)) {
+                return $this->where($id)->first($columns);
+            }
+        }
+
+        return $id instanceof Arrayable
+            ? $this->findMany($id, $columns)
+            : $this->whereKey($id)->first($columns);
+    }
+
     /**
      * @param  \Illuminate\Database\Eloquent\Builder  $query
      *
@@ -43,5 +61,10 @@ abstract class CompositeKeysModel extends Model
         }
 
         return $query;
+    }
+
+    protected function hasPrimary(string $key): bool
+    {
+        return in_array($key, $this->primaryKey);
     }
 }
