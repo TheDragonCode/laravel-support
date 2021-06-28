@@ -2,7 +2,6 @@
 
 namespace Helldar\LaravelSupport\Eloquent;
 
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 abstract class CompositeKeysModel extends Model
@@ -25,7 +24,12 @@ abstract class CompositeKeysModel extends Model
             : null;
     }
 
-    protected function setKeysForSaveQuery(Builder $query)
+    /**
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     *
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    protected function setKeysForSaveQuery($query)
     {
         /** @var array|string $keys */
         $keys = $this->primaryKey;
