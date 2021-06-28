@@ -37,7 +37,7 @@ abstract class CompositeKeysModel extends Model
             }
         }
 
-        return $id instanceof Arrayable
+        return is_array($id) || $id instanceof Arrayable
             ? $this->findMany($id, $columns)
             : $this->whereKey($id)->first($columns);
     }
