@@ -71,6 +71,20 @@ class ModelHelper
     /**
      * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
+     * @throws \Helldar\LaravelSupport\Exceptions\IncorrectModelException
+     *
+     * @return string
+     */
+    public function primaryKeyType($model): string
+    {
+        return $this
+            ->model($model)
+            ->getKeyType();
+    }
+
+    /**
+     * @param  \Illuminate\Database\Eloquent\Model|string  $model
+     *
      * @return string
      */
     public function className($model): string
