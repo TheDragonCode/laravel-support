@@ -2,7 +2,7 @@
 
 Various helper files for the Laravel and Lumen frameworks.
 
-![laravel support](https://user-images.githubusercontent.com/10347617/80062106-a1108300-853b-11ea-8704-ed46b41a8081.png)
+<img src="https://preview.dragon-code.pro/TheDragonCode/laravel-support.svg?brand=laravel" alt="Laravel Support"/>
 
 <p align="center">
     <a href="https://styleci.io/repos/258101736"><img src="https://styleci.io/repos/258101736/shield" alt="StyleCI" /></a>
