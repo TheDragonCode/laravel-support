@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\LaravelSupport\Exceptions;
+namespace DragonCode\LaravelSupport\Exceptions;
 
 use Exception;
 use Illuminate\Database\Eloquent\Model;

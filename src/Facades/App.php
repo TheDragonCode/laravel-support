@@ -1,17 +1,17 @@
 <?php
 
-namespace Helldar\LaravelSupport\Facades;
+namespace DragonCode\LaravelSupport\Facades;
 
-use Helldar\LaravelSupport\Support\App as Support;
+use DragonCode\LaravelSupport\Support\App as Support;
 use Illuminate\Support\Facades\Facade;
 
 /**
  * @method static bool isLaravel()
  * @method static bool isLumen()
  */
-final class App extends Facade
+class App extends Facade
 {
-    protected static function getFacadeAccessor()
+    protected static function getFacadeAccessor(): string
     {
         return Support::class;
     }

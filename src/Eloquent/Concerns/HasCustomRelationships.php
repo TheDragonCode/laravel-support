@@ -1,8 +1,8 @@
 <?php
 
-namespace Helldar\LaravelSupport\Eloquent\Concerns;
+namespace DragonCode\LaravelSupport\Eloquent\Concerns;
 
-use Helldar\LaravelSupport\Eloquent\Relations\HasManyCustomRelation;
+use DragonCode\LaravelSupport\Eloquent\Relations\HasManyCustomRelation;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 

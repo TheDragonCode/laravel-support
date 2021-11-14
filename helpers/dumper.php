@@ -1,6 +1,6 @@
 <?php
 
-use Helldar\LaravelSupport\Facades\Dumper;
+use DragonCode\LaravelSupport\Facades\Dumper;
 
 if (! function_exists('dd_sql')) {
     /**

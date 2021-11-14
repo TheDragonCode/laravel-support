@@ -1,8 +1,8 @@
 <?php
 
-namespace Helldar\LaravelSupport\Facades;
+namespace DragonCode\LaravelSupport\Facades;
 
-use Helldar\LaravelSupport\Support\Dumper as Support;
+use DragonCode\LaravelSupport\Support\Dumper as Support;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Facade;
  */
 class Dumper extends Facade
 {
-    protected static function getFacadeAccessor()
+    protected static function getFacadeAccessor(): string
     {
         return Support::class;
     }

@@ -1,27 +1,26 @@
 <?php
 
-namespace Helldar\LaravelSupport\Traits;
+namespace DragonCode\LaravelSupport\Traits;
 
-use Helldar\LaravelSupport\Support\ModelHelper;
+use DragonCode\LaravelSupport\Support\ModelHelper;
 use Illuminate\Container\Container;
 
 trait InitModelHelper
 {
-    /** @var \Helldar\LaravelSupport\Support\ModelHelper */
+    /** @var \DragonCode\LaravelSupport\Support\ModelHelper */
     protected static $model_helper;
 
     /**
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
      *
-     * @return \Helldar\LaravelSupport\Support\ModelHelper
+     * @return \DragonCode\LaravelSupport\Support\ModelHelper
      */
     protected function model(): ModelHelper
     {
-        if (static::$model_helper === null) {
-            static::$model_helper = Container::getInstance()
-                ->make(ModelHelper::class);
+        if (static::$model_helper) {
+            return static::$model_helper;
         }
 
-        return static::$model_helper;
+        return static::$model_helper = Container::getInstance()->make(ModelHelper::class);
     }
 }
