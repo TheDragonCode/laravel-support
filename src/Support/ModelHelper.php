@@ -1,8 +1,8 @@
 <?php
 
-namespace Helldar\LaravelSupport\Support;
+namespace DragonCode\LaravelSupport\Support;
 
-use Helldar\LaravelSupport\Exceptions\IncorrectModelException;
+use DragonCode\LaravelSupport\Exceptions\IncorrectModelException;
 use Illuminate\Database\Eloquent\Model;
 
 class ModelHelper
@@ -12,7 +12,7 @@ class ModelHelper
     /**
      * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
-     * @throws \Helldar\LaravelSupport\Exceptions\IncorrectModelException
+     * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
      * @return string
      */
@@ -26,7 +26,7 @@ class ModelHelper
     /**
      * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
-     * @throws \Helldar\LaravelSupport\Exceptions\IncorrectModelException
+     * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
      * @return string
      */
@@ -40,7 +40,7 @@ class ModelHelper
     /**
      * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
-     * @throws \Helldar\LaravelSupport\Exceptions\IncorrectModelException
+     * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
      * @return string
      */
@@ -57,7 +57,7 @@ class ModelHelper
     /**
      * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
-     * @throws \Helldar\LaravelSupport\Exceptions\IncorrectModelException
+     * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
      * @return string
      */
@@ -71,7 +71,7 @@ class ModelHelper
     /**
      * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
-     * @throws \Helldar\LaravelSupport\Exceptions\IncorrectModelException
+     * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
      * @return string
      */
@@ -95,7 +95,7 @@ class ModelHelper
     /**
      * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
-     * @throws \Helldar\LaravelSupport\Exceptions\IncorrectModelException
+     * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
      * @return array
      */
@@ -110,7 +110,7 @@ class ModelHelper
      * @param  \Illuminate\Database\Eloquent\Model|string  $model
      * @param  \Illuminate\Http\Request  $request
      *
-     * @throws \Helldar\LaravelSupport\Exceptions\IncorrectModelException
+     * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
      * @return array
      */

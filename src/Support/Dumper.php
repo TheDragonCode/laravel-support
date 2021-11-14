@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\LaravelSupport\Support;
+namespace DragonCode\LaravelSupport\Support;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Query\Builder as QueryBuilder;

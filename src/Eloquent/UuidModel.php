@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\LaravelSupport\Eloquent;
+namespace DragonCode\LaravelSupport\Eloquent;
 
 use Illuminate\Database\Eloquent\Model;
 use Ramsey\Uuid\Uuid;

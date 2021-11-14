@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\LaravelSupport\Eloquent;
+namespace DragonCode\LaravelSupport\Eloquent;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Database\Eloquent\Model;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Helldar\LaravelSupport\Support;
+namespace DragonCode\LaravelSupport\Support;
 
 use Illuminate\Foundation\Application as LaravelApp;
 use Laravel\Lumen\Application as LumenApp;
 
-final class App
+class App
 {
     public function isLaravel(): bool
     {

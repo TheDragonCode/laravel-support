@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\LaravelSupport\Eloquent\Relations;
+namespace DragonCode\LaravelSupport\Eloquent\Relations;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
