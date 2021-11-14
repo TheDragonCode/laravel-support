@@ -3,7 +3,6 @@
 <img src="https://preview.dragon-code.pro/TheDragonCode/laravel-support.svg?brand=laravel" alt="Laravel Support"/>
 
 <p align="center">
-    <a href="https://styleci.io/repos/258101736"><img src="https://styleci.io/repos/258101736/shield" alt="StyleCI" /></a>
     <a href="https://packagist.org/packages/dragon-code/laravel-support"><img src="https://img.shields.io/packagist/dt/dragon-code/laravel-support.svg?style=flat-square" alt="Total Downloads" /></a>
     <a href="https://packagist.org/packages/dragon-code/laravel-support"><img src="https://poser.pugx.org/dragon-code/laravel-support/v/stable?format=flat-square" alt="Latest Stable Version" /></a>
     <a href="https://packagist.org/packages/dragon-code/laravel-support"><img src="https://poser.pugx.org/dragon-code/laravel-support/v/unstable?format=flat-square" alt="Latest Unstable Version" /></a>
