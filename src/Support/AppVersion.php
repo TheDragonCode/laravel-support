@@ -25,6 +25,11 @@ class AppVersion
         return $this->major() === 8;
     }
 
+    public function is9x(): bool
+    {
+        return $this->major() === 9;
+    }
+
     protected function major(): int
     {
         return (int) Str::before($this->version(), '.');
@@ -33,12 +38,9 @@ class AppVersion
     protected function version(): string
     {
         if (AppHelper::isLumen()) {
-            $version = app()->version();
+            preg_match('/.+\((\d+\.\d+\.\d+)\)/', app()->version(), $matches);
 
-            $version = Str::after($version, '(');
-            $version = Str::before($version, ')');
-
-            return $version;
+            return $matches[1];
         }
 
         return Application::VERSION;
