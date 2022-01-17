@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static bool is6x()
  * @method static bool is7x()
  * @method static bool is8x()
+ * @method static bool is9x()
  */
 class AppVersion extends Facade
 {
