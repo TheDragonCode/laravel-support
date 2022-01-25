@@ -8,6 +8,7 @@ use DragonCode\LaravelSupport\Support\AppVersion as Support;
 use Illuminate\Support\Facades\Facade;
 
 /**
+ * @method static bool is(string $version, string $comparator = '>=')
  * @method static bool is6x()
  * @method static bool is7x()
  * @method static bool is8x()
