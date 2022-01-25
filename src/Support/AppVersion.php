@@ -49,6 +49,11 @@ class AppVersion
         return $version[2];
     }
 
+    public function is(string $version, string $comparator = '>='): bool
+    {
+        return version_compare($this->version(), $version, $comparator);
+    }
+
     public function version(): string
     {
         if (AppHelper::isLumen()) {
