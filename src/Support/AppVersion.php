@@ -30,17 +30,31 @@ class AppVersion
         return $this->major() === 9;
     }
 
+    public function major(): int
+    {
+        return (int) Str::before($this->version(), '.');
+    }
+
+    public function minor(): int
+    {
+        $version = $this->parse();
+
+        return $version[1];
+    }
+
+    public function patch(): int
+    {
+        $version = $this->parse();
+
+        return $version[2];
+    }
+
     public function is(string $version, string $comparator = '>='): bool
     {
         return version_compare($this->version(), $version, $comparator);
     }
 
-    protected function major(): int
-    {
-        return (int) Str::before($this->version(), '.');
-    }
-
-    protected function version(): string
+    public function version(): string
     {
         if (AppHelper::isLumen()) {
             preg_match('/.+\((\d+\.\d+\.\d+)\)/', app()->version(), $matches);
@@ -49,5 +63,10 @@ class AppVersion
         }
 
         return Application::VERSION;
+    }
+
+    protected function parse(): array
+    {
+        return explode('.', $this->version());
     }
 }
