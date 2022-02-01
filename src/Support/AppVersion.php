@@ -57,7 +57,7 @@ class AppVersion
     public function version(): string
     {
         if (AppHelper::isLumen()) {
-            preg_match('/.+\((\d+\.\d+\.\d+)\)/', app()->version(), $matches);
+            preg_match('/.+\((\d+\.\d+|\d+\.\d+\.\d+)\).+/', app()->version(), $matches);
 
             return $matches[1];
         }
