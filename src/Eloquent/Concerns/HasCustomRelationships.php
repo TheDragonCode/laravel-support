@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 /** @mixin \Illuminate\Database\Eloquent\Model */
 trait HasCustomRelationships
 {
-    protected function hasManyCustom(string $related, string $foreign_key = null, string $local_key = null)
+    protected function hasManyCustom(string $related, ?string $foreign_key = null, ?string $local_key = null)
     {
         /** @var \Illuminate\Database\Eloquent\Model $instance */
         $instance = $this->newRelatedInstance($related);

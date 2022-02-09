@@ -14,7 +14,7 @@ class Dumper
      * @see https://gist.github.com/Ellrion/561fc48894a87b853917e0a5cec83181#file-helper-php
      *
      * @param $query
-     * @param  bool  $is_short
+     * @param bool $is_short
      */
     public function sqlDd($query, bool $is_short = false): void
     {
@@ -29,7 +29,7 @@ class Dumper
      * @see https://gist.github.com/Ellrion/561fc48894a87b853917e0a5cec83181#file-helper-php
      *
      * @param $query
-     * @param  bool  $is_short
+     * @param bool $is_short
      *
      * @return array|string|void
      */
@@ -44,7 +44,7 @@ class Dumper
      * Returns SQL query.
      *
      * @param $query
-     * @param  bool  $is_short
+     * @param bool $is_short
      *
      * @return array|string
      */

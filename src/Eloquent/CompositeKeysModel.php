@@ -43,7 +43,7 @@ abstract class CompositeKeysModel extends Model
     }
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @param \Illuminate\Database\Eloquent\Builder $query
      *
      * @return \Illuminate\Database\Eloquent\Builder
      */

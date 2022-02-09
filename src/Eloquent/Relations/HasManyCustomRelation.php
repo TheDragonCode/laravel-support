@@ -78,9 +78,9 @@ class HasManyCustomRelation extends Relation
     }
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Model[]  $models
-     * @param  \Illuminate\Database\Eloquent\Collection  $results
-     * @param  string  $relation
+     * @param \Illuminate\Database\Eloquent\Model[] $models
+     * @param \Illuminate\Database\Eloquent\Collection $results
+     * @param string $relation
      *
      * @return array
      */

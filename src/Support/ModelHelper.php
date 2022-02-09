@@ -10,7 +10,7 @@ class ModelHelper
     private $models = [];
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Model|string  $model
+     * @param \Illuminate\Database\Eloquent\Model|string $model
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
@@ -24,7 +24,7 @@ class ModelHelper
     }
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Model|string  $model
+     * @param \Illuminate\Database\Eloquent\Model|string $model
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
@@ -38,7 +38,7 @@ class ModelHelper
     }
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Model|string  $model
+     * @param \Illuminate\Database\Eloquent\Model|string $model
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
@@ -55,7 +55,7 @@ class ModelHelper
     }
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Model|string  $model
+     * @param \Illuminate\Database\Eloquent\Model|string $model
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
@@ -69,7 +69,7 @@ class ModelHelper
     }
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Model|string  $model
+     * @param \Illuminate\Database\Eloquent\Model|string $model
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
@@ -83,7 +83,7 @@ class ModelHelper
     }
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Model|string  $model
+     * @param \Illuminate\Database\Eloquent\Model|string $model
      *
      * @return string
      */
@@ -93,7 +93,7 @@ class ModelHelper
     }
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Model|string  $model
+     * @param \Illuminate\Database\Eloquent\Model|string $model
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
@@ -107,8 +107,8 @@ class ModelHelper
     }
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Model|string  $model
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Database\Eloquent\Model|string $model
+     * @param \Illuminate\Http\Request $request
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
@@ -122,8 +122,8 @@ class ModelHelper
     }
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Model|string  $model
-     * @param  string[]  ...$except
+     * @param \Illuminate\Database\Eloquent\Model|string $model
+     * @param string[] ...$except
      *
      * @throws IncorrectModelException
      *
@@ -135,7 +135,7 @@ class ModelHelper
     }
 
     /**
-     * @param  \Illuminate\Database\Eloquent\Model|string  $model
+     * @param \Illuminate\Database\Eloquent\Model|string $model
      *
      * @throws IncorrectModelException
      *
