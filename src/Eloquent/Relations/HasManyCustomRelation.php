@@ -87,7 +87,7 @@ class HasManyCustomRelation extends Relation
     public function match(array $models, Collection $results, $relation)
     {
         foreach ($models as $model) {
-            $filtered = $results->filter(function ($result) use ($model) {
+            $filtered    = $results->filter(function ($result) use ($model) {
                 $local   = $model->getAttribute($this->local_key);
                 $foreign = $result->getAttribute($this->getForeignKeyName());
 
