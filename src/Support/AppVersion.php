@@ -30,6 +30,11 @@ class AppVersion
         return $this->major() === 9;
     }
 
+    public function is10x(): bool
+    {
+        return $this->major() === 10;
+    }
+
     public function major(): int
     {
         return (int) Str::before($this->version(), '.');
