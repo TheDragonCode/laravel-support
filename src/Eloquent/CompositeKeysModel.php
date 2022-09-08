@@ -23,7 +23,7 @@ abstract class CompositeKeysModel extends Model
         if (! is_array($key)) {
             return parent::getAttribute($key);
         }
-        
+
         return null;
     }
 
