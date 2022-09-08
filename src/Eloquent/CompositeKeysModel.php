@@ -20,9 +20,11 @@ abstract class CompositeKeysModel extends Model
 
     public function getAttribute($key)
     {
-        return ! is_array($key)
-            ? parent::getAttribute($key)
-            : null;
+        if (! is_array($key)) {
+            return parent::getAttribute($key);
+        }
+        
+        return null;
     }
 
     public function find($id, $columns = ['*'])
