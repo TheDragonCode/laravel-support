@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static bool is7x()
  * @method static bool is8x()
  * @method static bool is9x()
+ * @method static bool is10x()
  * @method static int major()
  * @method static int minor()
  * @method static int patch()
