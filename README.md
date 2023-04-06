@@ -1,6 +1,6 @@
 # Helpers for Laravel
 
-<img src="https://preview.dragon-code.pro/TheDragonCode/helpers.svg?brand=laravel" alt="Laravel Support"/>
+<img src="https://preview.dragon-code.pro/TheDragonCode/helpers.svg?brand=laravel" alt="Helpers for Laravel"/>
 
 [![Stable Version][badge_stable]][link_packagist]
 [![Unstable Version][badge_unstable]][link_packagist]
