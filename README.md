@@ -1,4 +1,4 @@
-# Laravel Support
+# Helpers for Laravel
 
 <img src="https://preview.dragon-code.pro/TheDragonCode/laravel-support.svg?brand=laravel" alt="Laravel Support"/>
 
