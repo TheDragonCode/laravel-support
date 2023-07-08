@@ -3,6 +3,7 @@
 namespace DragonCode\LaravelSupport\Support;
 
 use DragonCode\LaravelSupport\Exceptions\IncorrectModelException;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 class ModelHelper
@@ -80,6 +81,20 @@ class ModelHelper
         return $this
             ->model($model)
             ->getKeyType();
+    }
+
+    /**
+     * @param \Illuminate\Database\Eloquent\Model|string $model
+     *
+     * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
+     *
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function query($model): Builder
+    {
+        return $this
+            ->model($model)
+            ->newQuery();
     }
 
     /**
