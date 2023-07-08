@@ -78,16 +78,15 @@ class HasManyCustomRelation extends Relation
     }
 
     /**
-     * @param \Illuminate\Database\Eloquent\Model[] $models
-     * @param \Illuminate\Database\Eloquent\Collection $results
-     * @param string $relation
+     * @param  array<\Illuminate\Database\Eloquent\Model>  $models
+     * @param  string  $relation
      *
      * @return array
      */
     public function match(array $models, Collection $results, $relation)
     {
         foreach ($models as $model) {
-            $filtered    = $results->filter(function ($result) use ($model) {
+            $filtered = $results->filter(function ($result) use ($model) {
                 $local   = $model->getAttribute($this->local_key);
                 $foreign = $result->getAttribute($this->getForeignKeyName());
 

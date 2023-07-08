@@ -6,8 +6,7 @@ if (! function_exists('dd_sql')) {
     /**
      * Throws a message with an SQL query.
      *
-     * @param \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Query\Builder $query
-     * @param bool $is_short
+     * @param  \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Query\Builder  $query
      */
     function dd_sql($query, bool $is_short = false): void
     {
@@ -19,8 +18,7 @@ if (! function_exists('dump_sql')) {
     /**
      * Displays a message with an SQL query.
      *
-     * @param \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Query\Builder $query
-     * @param bool $is_short
+     * @param  \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Query\Builder  $query
      */
     function dump_sql($query, bool $is_short = false): void
     {
@@ -32,8 +30,7 @@ if (! function_exists('sql')) {
     /**
      * Displays a message with an SQL query.
      *
-     * @param \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Query\Builder $query
-     * @param bool $is_short
+     * @param  \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Query\Builder  $query
      *
      * @return array|string
      */

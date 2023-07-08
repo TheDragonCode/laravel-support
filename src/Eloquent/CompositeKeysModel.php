@@ -23,8 +23,6 @@ abstract class CompositeKeysModel extends Model
         if (! is_array($key)) {
             return parent::getAttribute($key);
         }
-
-        return null;
     }
 
     public function find($id, $columns = ['*'])
@@ -45,7 +43,7 @@ abstract class CompositeKeysModel extends Model
     }
 
     /**
-     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
      *
      * @return \Illuminate\Database\Eloquent\Builder
      */

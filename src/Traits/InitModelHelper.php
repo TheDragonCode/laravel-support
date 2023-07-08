@@ -12,8 +12,6 @@ trait InitModelHelper
 
     /**
      * @throws \Illuminate\Contracts\Container\BindingResolutionException
-     *
-     * @return \DragonCode\LaravelSupport\Support\ModelHelper
      */
     protected function model(): ModelHelper
     {

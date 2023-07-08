@@ -11,7 +11,7 @@ class ModelHelper
     private $models = [];
 
     /**
-     * @param \Illuminate\Database\Eloquent\Model|string $model
+     * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
      *
@@ -25,11 +25,9 @@ class ModelHelper
     }
 
     /**
-     * @param \Illuminate\Database\Eloquent\Model|string $model
+     * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
-     *
-     * @return string
      */
     public function table($model): string
     {
@@ -39,11 +37,9 @@ class ModelHelper
     }
 
     /**
-     * @param \Illuminate\Database\Eloquent\Model|string $model
+     * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
-     *
-     * @return string
      */
     public function tableWithConnection($model): string
     {
@@ -56,11 +52,9 @@ class ModelHelper
     }
 
     /**
-     * @param \Illuminate\Database\Eloquent\Model|string $model
+     * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
-     *
-     * @return string
      */
     public function primaryKey($model): string
     {
@@ -70,11 +64,9 @@ class ModelHelper
     }
 
     /**
-     * @param \Illuminate\Database\Eloquent\Model|string $model
+     * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
-     *
-     * @return string
      */
     public function primaryKeyType($model): string
     {
@@ -84,11 +76,9 @@ class ModelHelper
     }
 
     /**
-     * @param \Illuminate\Database\Eloquent\Model|string $model
+     * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
-     *
-     * @return \Illuminate\Database\Eloquent\Builder
      */
     public function query($model): Builder
     {
@@ -98,9 +88,7 @@ class ModelHelper
     }
 
     /**
-     * @param \Illuminate\Database\Eloquent\Model|string $model
-     *
-     * @return string
+     * @param  \Illuminate\Database\Eloquent\Model|string  $model
      */
     public function className($model): string
     {
@@ -108,11 +96,9 @@ class ModelHelper
     }
 
     /**
-     * @param \Illuminate\Database\Eloquent\Model|string $model
+     * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
-     *
-     * @return array
      */
     public function fillable($model): array
     {
@@ -122,12 +108,10 @@ class ModelHelper
     }
 
     /**
-     * @param \Illuminate\Database\Eloquent\Model|string $model
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Database\Eloquent\Model|string  $model
+     * @param  \Illuminate\Http\Request  $request
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
-     *
-     * @return array
      */
     public function onlyFillable($model, $request): array
     {
@@ -137,12 +121,10 @@ class ModelHelper
     }
 
     /**
-     * @param \Illuminate\Database\Eloquent\Model|string $model
-     * @param string[] ...$except
+     * @param  \Illuminate\Database\Eloquent\Model|string  $model
+     * @param  array<string>  ...$except
      *
      * @throws IncorrectModelException
-     *
-     * @return array
      */
     public function exceptFillable($model, ...$except): array
     {
@@ -150,7 +132,7 @@ class ModelHelper
     }
 
     /**
-     * @param \Illuminate\Database\Eloquent\Model|string $model
+     * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
      * @throws IncorrectModelException
      *
