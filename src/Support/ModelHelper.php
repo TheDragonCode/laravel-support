@@ -14,8 +14,6 @@ class ModelHelper
      * @param  \Illuminate\Database\Eloquent\Model|string  $model
      *
      * @throws \DragonCode\LaravelSupport\Exceptions\IncorrectModelException
-     *
-     * @return string
      */
     public function connection($model): ?string
     {
