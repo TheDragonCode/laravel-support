@@ -7,7 +7,7 @@ use Illuminate\Container\Container;
 
 trait InitModelHelper
 {
-    /** @var \DragonCode\LaravelSupport\Support\ModelHelper */
+    /** @var ModelHelper */
     protected static $model_helper;
 
     /**

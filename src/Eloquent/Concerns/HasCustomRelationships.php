@@ -11,14 +11,14 @@ trait HasCustomRelationships
 {
     protected function hasManyCustom(string $related, ?string $foreign_key = null, ?string $local_key = null)
     {
-        /** @var \Illuminate\Database\Eloquent\Model $instance */
+        /** @var Model $instance */
         $instance = $this->newRelatedInstance($related);
 
         $local_key     = $local_key ?: $this->getKeyName();
         $foreign_key   = $foreign_key ?: $this->getForeignKey();
         $foreign_table = $instance->getTable();
 
-        /** @var \Illuminate\Database\Eloquent\Model $model */
+        /** @var Model $model */
         $model = $this;
 
         return $this->newHasManyCustom(
