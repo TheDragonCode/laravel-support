@@ -24,7 +24,7 @@ trait HasCustomRelationships
         return $this->newHasManyCustom(
             $instance->newQuery(),
             $model,
-            "{$foreign_table}.{$foreign_key}",
+            "$foreign_table.$foreign_key",
             $local_key
         );
     }
